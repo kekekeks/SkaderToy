@@ -1,0 +1,9 @@
+uniform float iTime;
+uniform float3 iResolution;
+
+
+void main(float2 fragCoord, inout half4 fragColor)
+{
+    
+    fragColor = half4(1., half(fragCoord.x/255), half(fragCoord.y/255), 1.);
+}
